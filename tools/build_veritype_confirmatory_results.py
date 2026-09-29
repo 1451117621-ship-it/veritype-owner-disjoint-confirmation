@@ -6,7 +6,6 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -147,7 +146,6 @@ Interpretation: these results support the structure-aware policy relative to the
 
     report = {
         "status": "PASS" if passed else "FAIL",
-        "generated_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "scope": "Local SHA-256 manifest validation and summary-consistency checks only; no network or model calls.",
         "bundle": str(BUNDLE.relative_to(ROOT)),
         "sha256_checks": checks,

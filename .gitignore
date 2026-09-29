@@ -3,6 +3,7 @@
 *
 !.gitignore
 !README.md
+!RELEASE_NOTES_v1.0.0.md
 !requirements.txt
 
 !config/
@@ -12,6 +13,10 @@ config/*
 !tools/
 tools/*
 !tools/build_veritype_confirmatory_results.py
+
+!paper/
+paper/*
+!paper/veritype_confirmation_manuscript_draft_v1.md
 
 !experiments/
 !experiments/exp001_mvp/
