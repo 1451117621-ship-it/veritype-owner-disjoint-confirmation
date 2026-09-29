@@ -1,0 +1,145 @@
+{
+  "artifact_boundary": {
+    "identifier_normalization": "Observed bundle candidate_id values use v2_observed_* prefixes; identifiers are audit keys, not source-code claims.",
+    "ledger_reproducible_scope": "Raw ledgers, route counts, provider summaries, fallback calls, cost totals, and SHA bindings are locally reproducible without model or network calls.",
+    "not_claimed": [
+      "future provider API replay",
+      "source archive redistribution completeness",
+      "independent regeneration of hosted raw responses"
+    ]
+  },
+  "artifacts": {
+    "cost_ledger": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/cost_ledger.observed_raw_ledger.jsonl",
+      "sha256": "41eeb24a46f9e81df15f9ef0b7347836d49815830574a2c26496e95f9fcf8597"
+    },
+    "machine_gold_ledger": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/machine_gold_ledger.observed_raw_ledger.jsonl",
+      "sha256": "b4fa9cdd4fae352d37a55ff7f3509a0e0a011e5e4338d69e08108937e5da7985"
+    },
+    "per_target_route_results": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/per_target_route_results.observed_raw_ledger.jsonl",
+      "sha256": "a57a0ebb29451829d749a7af9dc2f19b383c6036825c3db7022815d11ae4c444"
+    },
+    "provider_outcomes_fallback": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/provider_outcomes_fallback.observed_raw_ledger.jsonl",
+      "sha256": "c552c4fd8c6215aa05dd4250a98997aaa7e8175591ef2015eec386de6646e061"
+    },
+    "provider_outcomes_primary": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/provider_outcomes_primary.observed_raw_ledger.jsonl",
+      "sha256": "ea2666b8474cb8f2030402fdcab5d61378b2255c0aedc036047c82c9350f27a7"
+    },
+    "readme": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/README.md",
+      "sha256": "a2f1040d0ab2e747ab286abc24a1002906d4836fa736d87e0de54e06e93342b6"
+    },
+    "source_summary": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/source_summary.observed.json",
+      "sha256": "6d28a5aa1331568f54cb41bacf34cd86ae2d42c619b718e35ff9f4e32efc415c"
+    }
+  },
+  "author_confirmed_observed": true,
+  "cost_calls": 13580,
+  "data_status": "observed_audit_summary",
+  "discrepancies": [],
+  "discrepancy_count": 0,
+  "fully_reproducible_observed_evidence": true,
+  "gold_summary": {
+    "claim_scope": "exact_source_declaration_reconstruction_and_machine_binding_preservation_only",
+    "human_override_permitted": false,
+    "human_review_decisions": 0,
+    "machine_gold_record_version": "veritype_machine_only_exact_gold_record_v2",
+    "owners": 188,
+    "protocol_version": "veritype_cost_constrained_owner_disjoint_confirmation_v2",
+    "status": "machine_only_gold_roster_validation_pass",
+    "targets": 3760,
+    "targets_per_owner": 20,
+    "unresolved_rows": 0
+  },
+  "model_api_calls": 0,
+  "network_requests": 0,
+  "protocol_version": "veritype_cost_constrained_owner_disjoint_confirmation_v2",
+  "provenance_note": "The authors identify the source bundle as observed experiment data. This audit validates internal reproducibility of the provided ledgers against the author-provided summary without network or model calls.",
+  "provider_outcomes": {
+    "fallback": {
+      "compile_empty": 177,
+      "risk_scoreable": 3132,
+      "semantic_invalid": 216,
+      "transport_failed": 235,
+      "valid_responses": 3309
+    },
+    "primary": {
+      "compile_empty": 972,
+      "risk_scoreable": 2540,
+      "semantic_invalid": 246,
+      "transport_failed": 2,
+      "valid_responses": 3512
+    }
+  },
+  "routes": {
+    "always_fallback": {
+      "accuracy": 0.775,
+      "correct": 2914,
+      "fallback_calls": 3760,
+      "incremental_fallback_usd": 74.5,
+      "no_prediction": 628,
+      "owners": 188,
+      "targets": 3760
+    },
+    "always_primary": {
+      "accuracy": 0.6143617021276596,
+      "correct": 2310,
+      "fallback_calls": 0,
+      "incremental_fallback_usd": 0.0,
+      "no_prediction": 1220,
+      "owners": 188,
+      "targets": 3760
+    },
+    "confidence_only": {
+      "accuracy": 0.8199468085106383,
+      "correct": 3083,
+      "fallback_calls": 2140,
+      "incremental_fallback_usd": 47.82,
+      "no_prediction": 360,
+      "owners": 188,
+      "targets": 3760
+    },
+    "full": {
+      "accuracy": 0.8359042553191489,
+      "correct": 3143,
+      "fallback_calls": 2160,
+      "incremental_fallback_usd": 47.91,
+      "no_prediction": 360,
+      "owners": 188,
+      "targets": 3760
+    },
+    "hash_random": {
+      "accuracy": 0.823936170212766,
+      "correct": 3098,
+      "fallback_calls": 2145,
+      "incremental_fallback_usd": 47.84,
+      "no_prediction": 360,
+      "owners": 188,
+      "targets": 3760
+    },
+    "structure_only": {
+      "accuracy": 0.836968085106383,
+      "correct": 3147,
+      "fallback_calls": 2155,
+      "incremental_fallback_usd": 47.86,
+      "no_prediction": 360,
+      "owners": 188,
+      "targets": 3760
+    },
+    "unusable_only": {
+      "accuracy": 0.8,
+      "correct": 3008,
+      "fallback_calls": 1220,
+      "incremental_fallback_usd": 27.1,
+      "no_prediction": 360,
+      "owners": 188,
+      "targets": 3760
+    }
+  },
+  "status": "fully_reproducible_observed_evidence_validated"
+}

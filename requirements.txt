@@ -1,0 +1,2 @@
+# MVP scripts use only the Python standard library.
+# Research extensions may add: pydantic, typer, rich, jinja2, pandas, scikit-learn, tqdm, openai.

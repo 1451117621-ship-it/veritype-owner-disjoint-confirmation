@@ -1,0 +1,8 @@
+route,role,correct,targets,accuracy,fallback_calls,cost,no_prediction
+always_primary,single-model baseline,2310,3760,0.6144,0,0.0,1220
+always_fallback,single-model baseline,2914,3760,0.775,3760,74.5,628
+unusable_only,operational baseline,3008,3760,0.8,1220,27.1,360
+confidence_only,primary comparator,3083,3760,0.82,2140,47.82,360
+hash_random,replay baseline,3098,3760,0.8239,2145,47.84,360
+structure_only,primary method,3147,3760,0.837,2155,47.86,360
+full,secondary ablation,3143,3760,0.8359,2160,47.91,360

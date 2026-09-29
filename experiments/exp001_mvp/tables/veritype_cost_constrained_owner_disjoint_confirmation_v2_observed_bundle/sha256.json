@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "audit_summary": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/audit_summary.json",
+      "sha256": "c8e46ea4e582bfdc55a274dc08445fe169a2265b7611ed9968a6bd7e4bd9976f"
+    },
+    "cost_ledger": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/cost_ledger.observed_raw_ledger.jsonl",
+      "sha256": "41eeb24a46f9e81df15f9ef0b7347836d49815830574a2c26496e95f9fcf8597"
+    },
+    "machine_gold_ledger": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/machine_gold_ledger.observed_raw_ledger.jsonl",
+      "sha256": "b4fa9cdd4fae352d37a55ff7f3509a0e0a011e5e4338d69e08108937e5da7985"
+    },
+    "per_target_route_results": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/per_target_route_results.observed_raw_ledger.jsonl",
+      "sha256": "a57a0ebb29451829d749a7af9dc2f19b383c6036825c3db7022815d11ae4c444"
+    },
+    "provider_outcomes_fallback": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/provider_outcomes_fallback.observed_raw_ledger.jsonl",
+      "sha256": "c552c4fd8c6215aa05dd4250a98997aaa7e8175591ef2015eec386de6646e061"
+    },
+    "provider_outcomes_primary": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/provider_outcomes_primary.observed_raw_ledger.jsonl",
+      "sha256": "ea2666b8474cb8f2030402fdcab5d61378b2255c0aedc036047c82c9350f27a7"
+    },
+    "readme": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/README.md",
+      "sha256": "9c866abc0f31cbfda4cbab6cc83f66e909266e4f9916dece9bbcbb469a68ab1f"
+    },
+    "source_summary": {
+      "path": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2_observed_bundle/source_summary.observed.json",
+      "sha256": "efa8bd3423c1eb0217fb80ae3ac1c757cc5e35776279192fc594068fb54049df"
+    }
+  },
+  "author_confirmed_observed": true,
+  "data_status": "observed_sha_manifest",
+  "identifier_normalization": "v2_observed_* candidate identifiers are used throughout observed raw ledgers.",
+  "ledger_reproducible_scope": "observed raw-ledger bundle only; no model or network replay claimed",
+  "model_api_calls": 0,
+  "network_requests": 0,
+  "protocol_version": "veritype_cost_constrained_owner_disjoint_confirmation_v2"
+}

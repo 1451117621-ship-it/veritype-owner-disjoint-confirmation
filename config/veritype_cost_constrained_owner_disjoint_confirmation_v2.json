@@ -1,0 +1,242 @@
+{
+  "protocol_version": "veritype_cost_constrained_owner_disjoint_confirmation_v2",
+  "status": "prospective_machine_only_cost_constrained_protocol_validated_awaiting_r0_preregistration_jdt_implementation_gold_budget_and_execution_authorization",
+  "date": "2026-08-06",
+  "evidence_role": {
+    "classification": "prospective_machine_only_owner_disjoint_confirmation_if_all_gates_pass",
+    "confirmatory_evidence_exists_now": false,
+    "failure_must_be_reported": true,
+    "development_negative_decisions_remain_disclosed": true,
+    "human_validated_semantic_acceptability": false
+  },
+  "supersession": {
+    "human_review_v1_modified": false,
+    "human_review_v1_executed": false,
+    "v2_requires_new_r0": true,
+    "selection_required_at_r0": true
+  },
+  "governance": {
+    "protocol_frozen_for_execution": false,
+    "cohort_acquisition_authorized": false,
+    "source_archive_access_authorized": false,
+    "new_machine_gold_authorized": false,
+    "network_requests_authorized": false,
+    "provider_calls_authorized": false,
+    "spend_authorized": false,
+    "public_preregistration_completed": false,
+    "jdt_engine_implementation_and_audit_completed": false,
+    "analysis_implementations_frozen": false,
+    "single_execution_authorization_exists": false,
+    "human_gold_required": false,
+    "human_review_staffing_required": false,
+    "human_judgment_may_change_gold": false,
+    "test_failure_must_be_published": true,
+    "existing_frozen_artifacts_may_be_modified": false,
+    "post_execution_target_deletion": false
+  },
+  "implementation_readiness": {
+    "javac_typemirror_extractor_available": true,
+    "machine_gold_roster_validator_available": true,
+    "downstream_binding_analyzer_available": true,
+    "eclipse_jdt_extractor_available": false,
+    "protocol_execution_ready": false
+  },
+  "method_contract": {
+    "primary_route_id": "C1_STRUCTURE_ONLY_COST_CONSTRAINED",
+    "primary_model_name": "shared_structure_only",
+    "feature_count": 16,
+    "new_fit_or_refit": false,
+    "new_calibration": false,
+    "test_threshold_tuning": false,
+    "full_model_role": "secondary_ablation"
+  },
+  "cost_constraint": {
+    "currency": "USD",
+    "secondary_provider": "gemini-3.5-flash",
+    "primary_discretionary_budget_fraction": 0.3,
+    "secondary_budget_grid": [0.0, 0.1, 0.2, 0.3, 0.5, 0.75, 1.0],
+    "forced_calls_shared_across_routes": true,
+    "forced_calls_outside_discretionary_cap": true,
+    "discretionary_budget_is_usd_not_call_count": true,
+    "selection_may_read_gemini_outcomes": false,
+    "selection_may_read_gold": false,
+    "unspent_budget_may_not_be_reallocated_after_outcomes": true,
+    "reservation_rule": {
+      "input_token_upper_bound": "utf8_prompt_byte_count",
+      "output_token_upper_bound": "frozen_max_total_output_tokens",
+      "cache_discount_assumed": false,
+      "computed_before_any_gemini_response": true
+    },
+    "selection_rule": {
+      "ordering": "raw_structure_only_risk_descending_then_candidate_id",
+      "budget_fit": "scan_in_order_select_if_reservation_fits_else_skip_and_continue",
+      "knapsack_or_outcome_optimization": false
+    }
+  },
+  "comparators": {
+    "primary": {
+      "route_id": "C0_CONFIDENCE_ONLY_COST_CONSTRAINED",
+      "same_forced_call_keys": true,
+      "same_discretionary_usd_cap": true,
+      "same_reservation_rule": true,
+      "same_call_count_required": false
+    },
+    "matched_budget_not_matched_call": true
+  },
+  "cohort_contract": {
+    "test_owner_clusters": 188,
+    "test_targets_per_owner": 20,
+    "test_targets": 3760,
+    "owner_is_primary_sampling_unit": true,
+    "final_selection": "sha256_order_within_owner_after_all_machine_gold_gates",
+    "post_execution_exclusion": false,
+    "old_candidate_or_gold_rows_allowed": false,
+    "missing_identity_policy": "ineligible_fail_closed",
+    "required_zero_overlap_fields": [
+      "provider_role",
+      "owner_group",
+      "upstream_component_id",
+      "family_id",
+      "repository_id",
+      "gav",
+      "source_group",
+      "source_blob_sha256",
+      "normalized_java_token_sha256",
+      "near_duplicate_token_shingles"
+    ]
+  },
+  "gold_contract": {
+    "mode": "machine_only_exact_source_declaration",
+    "new_gold_required": true,
+    "engine_a": "javac17_typemirror",
+    "engine_b": "eclipse_jdt_pinned_ast_bindings",
+    "dual_machine_exact_agreement_required": true,
+    "source_span_uniqueness_required": true,
+    "original_source_compilation_required": true,
+    "rendered_fqn_recompilation_required": true,
+    "dual_engine_use_site_binding_preservation_required": true,
+    "zero_new_error_diagnostics_required": true,
+    "zero_unresolved_bindings_required": true,
+    "human_review_required": false,
+    "human_override_permitted": false,
+    "unresolved_gold_allowed": false,
+    "all_exclusions_before_provider_calls": true,
+    "provider_runner_may_read_gold": false
+  },
+  "reproducibility_contract": {
+    "repository_selection_ledger_required": true,
+    "target_eligibility_and_exclusion_flow_required": true,
+    "owner_and_family_definitions_required": true,
+    "masking_rules_required": true,
+    "sampling_unit_and_hash_order_required": true,
+    "complete_prompt_and_schema_appendix_required": true,
+    "api_acquisition_window_required": true,
+    "toolchain_and_classpath_receipts_required": true,
+    "stagewise_counts_required": true
+  },
+  "provider_execution_plan": {
+    "logical_requests": {
+      "qwen": 3760,
+      "gemini": 3760,
+      "total": 7520
+    },
+    "full_gemini_coverage_is_acquisition_not_route_cost": true,
+    "route_selection_frozen_before_gemini_responses": true
+  },
+  "statistics": {
+    "primary_estimand": "equal_owner_weighted_exact_accuracy_structure_minus_confidence_at_same_discretionary_usd_cap",
+    "primary_test": "two_sided_paired_owner_cluster_mean_t_test",
+    "primary_alpha": 0.05,
+    "supporting_target_test": "two_sided_exact_mcnemar",
+    "all_failures_remain_in_denominator": true,
+    "primary_success_rule": {
+      "observed_accuracy_difference_minimum": 0.01,
+      "owner_cluster_p_below": 0.05,
+      "owner_cluster_t_interval_lower_above": 0.0,
+      "budget_integrity_pass": true,
+      "identity_conflicts": 0,
+      "integrity_discrepancies": 0
+    }
+  },
+  "analysis_independence_contract": {
+    "two_implementations_required": true,
+    "separate_entrypoints_and_output_roots": true,
+    "both_implementations_frozen_before_unseal": true,
+    "independent_implementation_may_import_candidate_analysis_code": false,
+    "exact_agreement_required": true,
+    "distinct_human_analysis_leads_required": false,
+    "independence_claim": "implementation_independence_not_personnel_independence"
+  },
+  "decision_gates": {
+    "allowed_decisions": [
+      "CONFIRMED_COST_CONSTRAINED_STRUCTURE_ALLOCATION_MACHINE_ENDPOINT",
+      "NOT_CONFIRMED_SCIENCE",
+      "INVALID_EXECUTION_NO_SCIENTIFIC_DECISION"
+    ]
+  },
+  "claim_scope": {
+    "exact_source_declaration_reconstruction": "eligible_if_all_gates_pass",
+    "machine_compilation_and_binding_preservation": "eligible_if_all_gates_pass",
+    "cost_aware_routing": "eligible_only_after_successful_matched_dollar_execution",
+    "human_validated_semantic_acceptability": false,
+    "alternative_semantically_acceptable_types": false,
+    "runtime_behavior_equivalence": false
+  },
+  "price_and_currency_contract": {
+    "gemini_price_multipliers": [0.25, 0.5, 1.0, 2.0, 4.0],
+    "base_price_receipt_required_before_r6": true,
+    "qwen_cny_and_gemini_usd_cross_currency_sum_default": false,
+    "fx_break_even_required": true
+  },
+  "latency_contract": {
+    "online_end_to_end_claim_authorized": false,
+    "provider_request_components_required": true,
+    "local_compile_components_required": true,
+    "full_coverage_batch_is_not_deployed_cascade_latency": true
+  },
+  "budget_plan": {
+    "hard_ceiling_required_before_execution": true,
+    "reservation_ledger_required": true,
+    "actual_spend_ledger_required": true
+  },
+  "stage_plan": [
+    "R0 select v2 and freeze protocol, price, budget, analysis implementations, and public preregistration",
+    "R1 build and audit ever-seen identity and content universe",
+    "R2 acquire at least 240 new owner candidates",
+    "R3 build parse-only candidate pool",
+    "R4 execute machine gold gates and seal final cohort",
+    "R5 build leave-target-out profiles and blind Qwen projection",
+    "R6 freeze provider aliases, prompts, schema, prices, reservations, and one-use authorization",
+    "R7 execute and audit Qwen without Gemini responses",
+    "R8 execute and audit Gemini without gold access",
+    "R9 unseal once, run dual analyses, audit, and publish decision"
+  ],
+  "sha_bindings": {
+    "protocol_document": {
+      "path": "docs/01_protocols_and_requirements/veritype-cost-constrained-owner-disjoint-machine-only-confirmation-v2-2026-08-06.md",
+      "sha256": "6bf813cceacc35b63f9a0e3cbf3800bdf4a1fb8d0e7b600ef97edef8f41adfc0"
+    },
+    "validation_module": {
+      "path": "src/veritype/cost_constrained_owner_disjoint_confirmation_v2.py",
+      "sha256": "8f9cf9d5caced874be00313a09db58c52d91fed3bcc239575d0b01a5005f050a"
+    },
+    "validation_entrypoint": {
+      "path": "scripts/265_validate_veritype_cost_constrained_owner_disjoint_confirmation_v2.py",
+      "sha256": "02a6516cf7d700e2a0a21ac6f2ff8859bd21d4828a6625f2d6f3fdd85e31b11a"
+    },
+    "focused_tests": {
+      "path": "tests/test_cost_constrained_owner_disjoint_confirmation_v2.py",
+      "sha256": "89f70bf5482cd3b4a513f66a921b7f27becd217aeff4f7bc779e48ec95382f69"
+    }
+  },
+  "planned_new_artifacts": {
+    "write_once": true,
+    "final_cohort_manifest": "experiments/exp001_mvp/inputs/veritype_cost_constrained_owner_disjoint_confirmation_v2/final_cohort_manifest.json",
+    "machine_gold_ledger": "experiments/exp001_mvp/inputs/veritype_cost_constrained_owner_disjoint_confirmation_v2/machine_gold_ledger.jsonl",
+    "provider_outcomes_primary": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2/provider_outcomes_primary.jsonl",
+    "provider_outcomes_fallback": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2/provider_outcomes_fallback.jsonl",
+    "route_result_summary": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2/summary.json",
+    "independent_audit_summary": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2/audit_summary.json",
+    "decision_file": "experiments/exp001_mvp/tables/veritype_cost_constrained_owner_disjoint_confirmation_v2/decision.json"
+  }
+}
